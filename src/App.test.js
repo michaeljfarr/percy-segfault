@@ -11,6 +11,7 @@ test("test 1", async () => {
   await driver.get(`https://create-react-app.dev/`);
   await percySnapshot(driver, "a page", { widths: [1280] });
   console.log("at end of test 1");
+  await driver.quit();
 });
 
 test("test 2", async () => {
